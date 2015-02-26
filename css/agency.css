@@ -89,9 +89,9 @@ fieldset[disabled] .btn-primary.active {
   background-color: #333458;
 }
 .btn-xl {
-  color: white;
-  background-color: #333458;
-  border-color: #333458;
+  color: #333458;
+  background-color: #d0d0d0;
+  border-color: transparent;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -104,9 +104,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  color: white;
-  background-color: #202138;
-  border-color: #1d1d31;
+  color: #333458;
+  background-color: #b7b7b7;
+  border-color: rgba(0, 0, 0, 0);
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -128,12 +128,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #333458;
-  border-color: #333458;
+  background-color: #d0d0d0;
+  border-color: transparent;
 }
 .btn-xl .badge {
-  color: #333458;
-  background-color: white;
+  color: #d0d0d0;
+  background-color: #333458;
 }
 .navbar-default {
   background-color: #333458;
@@ -147,7 +147,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #202138;
+  color: white;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -168,11 +168,11 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: white;
+  color: #d0d0d0;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-  color: #333458;
+  color: white;
   outline: none;
 }
 .navbar-default .navbar-nav > .active > a {
@@ -212,15 +212,35 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: url('../img/header-bg.jpg') no-repeat center center scroll;
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   header .intro-text {

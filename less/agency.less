@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-xl {
-	.button-variant(white; @brand-primary; @brand-primary);
+	.button-variant(@brand-primary; @brand-secondary; transparent);
 	.heading-font;
 	font-weight: 700;
 	border-radius: 3px;
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
         &:focus,
         &:active,
         &.active {
-        	color: darken(@brand-primary, 10%);
+        color: white;
         }
 	}
 	.navbar-collapse {
@@ -106,10 +106,10 @@ h1, h2, h3, h4, h5, h6 {
     			.heading-font;
     			font-weight: 400;
     			letter-spacing: 1px;
-    			color: white;
+    			color: @brand-secondary;
     			&:hover,
     			&:focus {
-    				color: @brand-primary;
+    				color: white;
     				outline: none;
     			}
     		}
@@ -185,19 +185,6 @@ header {
 		}
 	}
 }
-
-// header {
-//   display: table;
-//   height: 100%;
-//   width: 100%;
-//   position: relative;
-//   background: url('../img/header-bg.jpg') no-repeat center center scroll;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-  
-//  }
 
 @media(min-width:768px) {
 	header {
