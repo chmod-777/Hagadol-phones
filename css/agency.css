@@ -273,8 +273,17 @@ header .intro-text .intro-heading {
   display: table-cell;
   vertical-align: middle;
 }
-.price-tag p {
+.price-tag {
+  text-align: center;
   font-weight: 900;
+}
+.price-tag p {
+  font-size: 24px;
+}
+.price-tag span {
+  vertical-align: sub;
+  font-size: 12px;
+  font-weight: 500;
 }
 section {
   padding-top: -50px;
